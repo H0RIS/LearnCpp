@@ -1,7 +1,5 @@
 import std;
-
-int ReadNumber();
-void WriteAnswer(int input);
+#include "io.h"
 
 int main()
 {
