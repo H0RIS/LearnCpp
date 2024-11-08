@@ -1,3 +1,3 @@
-# L-LearnCpp
+# LearnCpp
 
 https://www.learncpp.com/
