@@ -1,3 +1,9 @@
+/*
+Write a complete program that reads an integer from the user,
+doubles it using the doubleNumber() function you wrote in the previous quiz question,
+and then prints the doubled value out to the console.
+*/
+
 import std;
 
 int GetInt()
