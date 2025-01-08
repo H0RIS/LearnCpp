@@ -1,3 +1,7 @@
+/*
+    Ask the user to enter three values. The program should then print these values. Add an appropriate comment above function main().
+*/
+
 #include <iostream>
 
 int main()
