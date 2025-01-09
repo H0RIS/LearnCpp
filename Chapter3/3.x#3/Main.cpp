@@ -1,3 +1,8 @@
+/*
+* What does the call stack look like in the following program when the point of execution is on line 4? 
+* Only the function names are needed for this exercise, not the line numbers indicating the point of return. 
+*/
+
 #include <iostream>
 
 void d()
