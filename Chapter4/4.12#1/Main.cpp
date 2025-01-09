@@ -1,3 +1,8 @@
+/*
+* Write a short program where the user is asked to enter a single character.
+* Print the value of the character and its ASCII code, using static_cast.
+*/
+
 import std;
 
 int main()
