@@ -9,14 +9,7 @@ import std;
 
 constexpr bool isEven(int x)
 {
-    if (x % 2)
-    {
-        return false;
-    }
-    else
-    {
-        return true;
-    }
+    return x % 2 ? false : true;
 }
 
 int main()
