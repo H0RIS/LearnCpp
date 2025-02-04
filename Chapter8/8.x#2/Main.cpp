@@ -10,8 +10,20 @@ Complete the following program by writing the isPrime() function using a for-loo
 
 bool isPrime(int x)
 {
-    return false;
-    // write this function using a for loop
+    if (x <= 1)
+    {
+        return false;
+    }
+
+    for (size_t i{ 2 }; i < x; i++)
+    {
+        if (x % i == 0)
+        {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 int main()
