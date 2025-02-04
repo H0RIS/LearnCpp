@@ -41,22 +41,23 @@ void printBallHeight(double ballHeight, int seconds)
 
 // Calculates the current ball height and then prints it
 // This is a helper function to make it easier to do this
-void calculateAndPrintBallHeight(double towerHeight, int seconds)
+double calculateAndPrintBallHeight(double towerHeight, int seconds)
 {
     const double ballHeight{ calculateBallHeight(towerHeight, seconds) };
     printBallHeight(ballHeight, seconds);
+
+    return ballHeight;
 }
 
 int main()
 {
     const double towerHeight{ getTowerHeight() };
 
-    calculateAndPrintBallHeight(towerHeight, 0);
-    calculateAndPrintBallHeight(towerHeight, 1);
-    calculateAndPrintBallHeight(towerHeight, 2);
-    calculateAndPrintBallHeight(towerHeight, 3);
-    calculateAndPrintBallHeight(towerHeight, 4);
-    calculateAndPrintBallHeight(towerHeight, 5);
-
+    int i{ 0 };
+    while (calculateAndPrintBallHeight(towerHeight, i) > 0.0)
+    {
+        ++i;
+    }
+    
     return 0;
 }
