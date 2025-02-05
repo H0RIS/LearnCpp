@@ -1,6 +1,7 @@
 /*
 Implement a game of Hi-Lo. First, your program should pick a random integer between 1 and 100.
 The user is given 7 tries to guess the number.
+For extra credit: make the minimum and maximum values and the number of guesses a configurable parameter.
 */
 
 #include <iostream>
@@ -29,9 +30,11 @@ int main()
 {
     while (true)
     {
-        const int number{ Random::get(1, 100) };
-        constexpr int tries{ 7 };
-        std::cout << "Let's play a game. I'm thinking of a number between 1 and 100. You have 7 tries to guess what it is.\n";
+        constexpr int tries{ 5 };
+        constexpr int min{1};
+        constexpr int max{50};
+        const int number{ Random::get(min, max) };
+        std::cout << "Let's play a game. I'm thinking of a number between " << min << " and " << max << ". You have " << tries << " tries to guess what it is.\n";
 
         int i{ 1 };
         while (true)
@@ -57,9 +60,9 @@ int main()
                 i++;
             }
 
-            if (tries <= i)
+            if (tries < i)
             {
-                std::cout << "Sorry, you lose. The correct number was " << number << ".\n";
+                std::cout << "Sorry, you lose. The correct number was " << number << ".\n\n";
                 Gameover();
                 break;
             }
