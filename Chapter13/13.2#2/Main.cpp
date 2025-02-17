@@ -1,3 +1,7 @@
+/*
+Put the MonsterType enumeration inside a namespace. Then, create a main() function and instantiate a troll. The program should compile.
+*/
+
 import std;
 
 namespace Monster

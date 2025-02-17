@@ -1,3 +1,7 @@
+/*
+Define an unscoped enumerated type named MonsterType to choose between the following monster races: orc, goblin, troll, ogre, and skeleton.
+*/
+
 import std;
 
 
