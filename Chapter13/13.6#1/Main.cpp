@@ -8,9 +8,75 @@ Call printNumberOfLegs() from main() with a cat and a chicken.
 
 import std;
 
+enum class Animal
+{
+    pig,
+    chicken,
+    goat,
+    cat,
+    dog,
+    duck,
+};
+
+constexpr std::string_view GetAnimalName(Animal animal)
+{
+    using enum Animal;
+
+    switch (animal)
+    {
+    case pig:
+        return "pig";
+    case chicken:
+        return "chicken";
+    case goat:
+        return "goat";
+    case cat:
+        return "cat";
+    case dog:
+        return "dog";
+    case duck:
+        return "duck";
+    default:
+        return "???";
+    }
+}
+
+void PrintNumberOfLegs(Animal animal)
+{
+    using enum Animal;
+
+    int legs{};
+    switch (animal)
+    {
+    case pig:
+        legs = 4;
+        break;
+    case chicken:
+        legs = 2;
+        break;
+    case goat:
+        legs = 4;
+        break;
+    case cat:
+        legs = 4;
+        break;
+    case dog:
+        legs = 4;
+        break;
+    case duck:
+        legs = 2;
+        break;
+    default:
+        legs = 0;
+        break;
+    }
+    std::cout << "A " << GetAnimalName(animal) << " has " << legs << " legs.\n";
+}
+
 int main()
 {
-    std::cout << "Hello, World!\n";
+    PrintNumberOfLegs(Animal::cat);
+    PrintNumberOfLegs(Animal::chicken);
 
     return 0;
 }
