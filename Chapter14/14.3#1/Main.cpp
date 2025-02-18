@@ -1,8 +1,6 @@
 /*
 Create a struct called IntPair that holds two integers.
 Add a member function named print that prints the value of the two integers.
-
-
 */
 
 import std;
