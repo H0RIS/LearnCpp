@@ -20,12 +20,12 @@ public:
         m_z = z;
     }
 
-    void Print()
+    void Print() const
     {
         std::cout << "<" << m_x << ", " << m_y << ", " << m_z << ">\n";
     }
 
-    bool IsEqual(Point3d& p)
+    bool IsEqual(Point3d& p) const
     {
         return (m_x == p.m_x) && (m_y == p.m_y) && (m_z == p.m_z);
     }
