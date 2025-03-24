@@ -18,9 +18,9 @@ int main()
         v[i] = temp;
     }
 
-    for (int number : v)
-    {
-        std::cout << number << " ";
-    }
+    std::cout << "Sum of your numbers: " << v[0] + v[1] + v[2]
+        << "\nProd of your numbers: " << v[0] * v[1] * v[2]
+        << '\n';
+
     return 0;
 }
