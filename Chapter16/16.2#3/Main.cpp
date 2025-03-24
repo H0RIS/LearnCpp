@@ -8,8 +8,7 @@ int main()
 {
     std::vector<double> temperatures(365);
 
-    for (int number : temperatures
-        )
+    for (int number : temperatures)
     {
         std::cout << number << " ";
     }
