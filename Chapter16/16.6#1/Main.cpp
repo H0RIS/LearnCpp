@@ -1,5 +1,5 @@
 //
-//Write a short program that prints the elements of the following vector to the screen using a loop:
+// Write a short program that prints the elements of the following vector to the screen using a loop:
 //
 
 #include <iostream>
